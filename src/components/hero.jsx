@@ -2,7 +2,10 @@ import "../styles/hero.css";
 
 function Hero() {
   return (
-    <main className=" ml-2   py-12 mt-8 w-[95vw] text-7xl sm:text-8xl sm:py-20 lg:text-9xl lg:ml-5 eagle text-black/40  overflow-hidden relative mb-24">
+    <main
+      id="home"
+      className=" ml-2   py-12 mt-8 w-[95vw] text-7xl sm:text-8xl sm:py-20 lg:text-9xl lg:ml-5 eagle text-black/40  overflow-hidden relative mb-24"
+    >
       <div>
         <p className="move-to-right relative z-10">Junior</p>
       </div>

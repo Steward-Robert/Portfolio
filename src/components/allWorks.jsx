@@ -1,60 +1,55 @@
 import work from "../Data/work";
 import "../styles/neumorphism.css";
+import { ArrowUpRight } from "lucide-react";
 
 function AllWorks() {
   return (
-    <main className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 p-4 md:p-6">
+    <div className="grid grid-cols-1 gap-6 p-0 sm:gap-7 md:grid-cols-2 xl:grid-cols-3">
       {work.map((w) => {
         return (
-          <div
-            className="inside rounded-2xl p-5 flex flex-col gap-5"
+          <article
+            className="portfolio-card flex flex-col gap-5 rounded-2xl p-5 sm:p-6"
             key={w.id}
           >
-            {/* Project name */}
-            <div>
-              <h2 className="eagle text-black/70 outside-box px-5 py-3 w-fit min-w-40 rounded-2xl text-2xl text-center hover:text-red-600">
-                <p className="">{w.name}</p>
-              </h2>
-            </div>
-
-            {/* Project image */}
-            <div className="w-full rounded-2xl Shadow">
+            <h3 className="eagle-t text-2xl leading-snug text-black/75">
+              {w.name}
+            </h3>
+            <div className="portfolio-project-image w-full overflow-hidden rounded-xl">
               <img
-                className="w-full aspect-video object-cover rounded-2xl"
+                className="aspect-video w-full rounded-xl object-cover"
                 src={w.image}
                 alt={w.name}
+                loading="lazy"
+                decoding="async"
               />
             </div>
-
-            {/* Project description */}
-            <div>
-              <p className="eagle-t text-lg leading-7 text-black/70">
-                {w.description}
-              </p>
-            </div>
-
-            {/* Technologies */}
-            <div className="flex flex-wrap gap-3">
+            <p className="min-h-0 flex-1 text-base leading-7 text-black/65">
+              <p className="eagle-t text-lg"> {w.description}</p>
+            </p>
+            <ul
+              className="flex flex-wrap gap-2.5"
+              aria-label={`${w.name} technologies`}
+            >
               {w.stack.map((tech) => (
-                <span
+                <li
                   key={tech.name}
-                  className=" eagle inside rounded-xl px-3 py-1.5 text-sm text-center text-black/60  my-4"
+                  className="inside rounded-xl px-3 py-1.5 text-sm text-black/65 eagle"
                 >
                   {tech.name}
-                </span>
+                </li>
               ))}
-            </div>
-
-            {/* Demo button */}
-            <div className="mt-auto pt-2">
-              <button className="p-3 outside-btn rounded-2xl block mx-auto eagle text-black/70 hover:scale-110 duration-700 ">
-                Click to See demo
-              </button>
-            </div>
-          </div>
+            </ul>
+            <button
+              type="button"
+              className="outside-btn mt-1 inline-flex min-h-12 items-center justify-center gap-2 self-start rounded-xl px-4 py-3 font-semibold text-black/70 transition duration-300 hover:-translate-y-0.5 hover:text-red-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-red-700 motion-reduce:transform-none motion-reduce:transition-none eagle text-xl"
+            >
+              Click to see demo
+              <ArrowUpRight size={17} aria-hidden="true" />
+            </button>
+          </article>
         );
       })}
-    </main>
+    </div>
   );
 }
 

@@ -67,7 +67,10 @@ function About() {
   }, [startTyping]);
 
   return (
-    <section className="about-section w-[90vw] md:w-[80vw] lg:w-[60vw] mx-auto py-10 inside rounded-2xl p-3">
+    <section
+      id="about"
+      className="about-section w-[90vw] md:w-[80vw] lg:w-[60vw] mx-auto py-10 inside rounded-2xl p-3"
+    >
       {/* Label */}
       <div className="mb-8">
         <span className="text-xl outside-box inline-block rounded-xl px-5 py-2 font-semibold tracking-[0.2em] text-black/60 hover:text-red-600 eagle">
@@ -99,8 +102,11 @@ function About() {
             return (
               <div className="flex flex-col" key={f.id}>
                 <p className="inside p-2 w-[70%] mx-auto rounded-2xl eagle text-black/60 text-sm my-1.5 flex gap-3 items-center">
-                  <div className=" h-6 w-6 rounded-sm">
-                    <img className="object-cover w-full h-full" src={f.image} />
+                  <div className=" h-6 w-6 rounded-sm ">
+                    <img
+                      className="object-cover w-full rounded-sm h-full drop-shadow-xl drop-shadow-black"
+                      src={f.image}
+                    />
                   </div>
                   {f.name}
                 </p>
@@ -118,7 +124,10 @@ function About() {
               <div className="flex flex-col" key={b.id}>
                 <div className="inside p-2 w-[70%] mx-auto rounded-2xl eagle text-black/60 text-sm my-1.5 flex gap-3 items-center">
                   <div className=" h-6 w-6 rounded-sm">
-                    <img className="object-cover w-full h-full" src={b.image} />
+                    <img
+                      className="object-cover w-full rounded-full h-full drop-shadow-xl drop-shadow-black"
+                      src={b.image}
+                    />
                   </div>
 
                   <p> {b.name}</p>
@@ -137,7 +146,10 @@ function About() {
               <div className="flex flex-col" key={t.id}>
                 <p className="inside p-2 w-[70%] mx-auto rounded-2xl eagle text-black/60 text-sm my-1.5 flex gap-3 items-center">
                   <div className=" h-6 w-6 rounded-sm">
-                    <img className="object-cover w-full h-full" src={t.image} />
+                    <img
+                      className="object-cover w-full rounded-full h-full drop-shadow-xl drop-shadow-black"
+                      src={t.image}
+                    />
                   </div>
                   <p>{t.name}</p>
                 </p>

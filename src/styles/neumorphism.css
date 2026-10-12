@@ -55,6 +55,46 @@
     inset -5px -5px 10px #f9f9f9;
 }
 
+.portfolio-card {
+  background: #bebebe;
+  box-shadow:
+    7px 7px 14px #a0a0a0,
+    -7px -7px 14px #f1f1f1;
+  transition:
+    transform 240ms ease,
+    box-shadow 240ms ease;
+}
+
+.portfolio-project-image {
+  box-shadow:
+    inset 3px 3px 7px #858585,
+    inset -3px -3px 7px #f1f1f1;
+}
+
+.portfolio-project-image img {
+  transition: transform 350ms ease;
+}
+
+.contact-field {
+  background: #bebebe;
+  border: 1px solid transparent;
+  box-shadow:
+    inset 4px 4px 8px #929292,
+    inset -4px -4px 8px #ededed;
+  outline: none;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.contact-field:focus {
+  border-color: rgb(185 28 28 / 45%);
+  box-shadow:
+    inset 3px 3px 6px #929292,
+    inset -3px -3px 6px #ededed,
+    0 0 0 3px rgb(185 28 28 / 12%);
+}
+
 .typing-cursor {
   display: inline-block;
   margin-left: 3px;
@@ -70,8 +110,25 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .typing-cursor {
+  .typing-cursor,
+  .portfolio-card,
+  .portfolio-project-image img,
+  .contact-field {
     animation: none;
+    transition: none;
+  }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .portfolio-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      10px 10px 20px #9a9a9a,
+      -10px -10px 20px #f3f3f3;
+  }
+
+  .portfolio-card:hover .portfolio-project-image img {
+    transform: scale(1.025);
   }
 }
 
