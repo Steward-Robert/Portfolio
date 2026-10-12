@@ -1,0 +1,35 @@
+body {
+  background-color: #bebebe;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* État initial du portfolio */
+.portfolio-content {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: portfolioReveal 1s ease-out forwards;
+  animation-delay: 2.6s;
+}
+
+/* Apparition progressive */
+@keyframes portfolioReveal {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Accessibilité */
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-content {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

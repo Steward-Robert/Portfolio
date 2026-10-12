@@ -1,0 +1,80 @@
+.outside {
+  background: #bebebe;
+
+  box-shadow:
+    8px 8px 16px #a0a0a0,
+    -8px -8px 16px #f1f1f1;
+}
+
+.outside-btn {
+  background: #bebebe;
+
+  box-shadow:
+    8px 8px 16px #a0a0a0,
+    -8px -8px 16px #f1f1f1;
+}
+
+.outside-box {
+  background: #bebebe;
+
+  box-shadow:
+    8px 8px 16px #a0a0a0,
+    -8px -8px 16px #f1f1f1;
+}
+
+.inside {
+  background: #bebebe;
+
+  box-shadow:
+    inset 6px 6px 12px #7d7d7d,
+    inset -6px -6px 12px #f1f1f1;
+}
+
+.eagle {
+  font-family: "Eagle Lake", serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.eagle-t {
+  font-family: "Eagle Lake", serif;
+
+  font-style: normal;
+}
+
+.outside-btn:active {
+  background: #bebebe;
+  box-shadow:
+    inset 5px 5px 10px #838383,
+    inset -5px -5px 10px #f9f9f9;
+}
+.outside-box:hover {
+  background: #bebebe;
+  box-shadow:
+    inset 5px 5px 10px #838383,
+    inset -5px -5px 10px #f9f9f9;
+}
+
+.typing-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  color: #7958e8;
+  font-weight: bold;
+  animation: blink 0.8s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .typing-cursor {
+    animation: none;
+  }
+}
+
+.Shadow {
+  box-shadow: 0px 0px 0px 10px rgb(148, 147, 147);
+}

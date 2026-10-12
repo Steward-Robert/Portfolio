@@ -1,0 +1,71 @@
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #bebebe;
+  color: #292929;
+
+  animation: introZoom 1.2s ease-in-out 1.4s forwards;
+}
+
+.intro-ward {
+  display: flex;
+  gap: 0.04em;
+
+  font-size: clamp(4rem, 15vw, 10rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+
+  transform-origin: center;
+}
+
+.intro-ward span {
+  opacity: 0;
+  transform: translateY(25px) scale(0.8);
+
+  animation: letterAppear 0.45s ease-out forwards;
+}
+
+@keyframes letterAppear {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes introZoom {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  70% {
+    transform: scale(5);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(12);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-overlay {
+    animation-duration: 0.01ms;
+    animation-delay: 0ms;
+  }
+
+  .intro-ward span {
+    animation-duration: 0.01ms;
+    animation-delay: 0ms !important;
+    opacity: 1;
+    transform: none;
+  }
+}
