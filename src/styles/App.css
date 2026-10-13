@@ -4,6 +4,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* État initial du portfolio */
 .portfolio-content {
   opacity: 0;

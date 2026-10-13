@@ -11,10 +11,10 @@ function AllWorks() {
             className="portfolio-card flex flex-col gap-5 rounded-2xl p-5 sm:p-6"
             key={w.id}
           >
-            <h3 className="eagle-t text-2xl leading-snug text-black/75">
+            <h3 className="eagle text-2xl inside p-2 inline-block rounded-2xl text-center leading-snug text-black/75">
               {w.name}
             </h3>
-            <div className="portfolio-project-image w-full overflow-hidden rounded-xl">
+            <div className="portfolio-project-image w-full overflow-hidden rounded-xl duration-1000 lg:hover:scale-155 lg:hover:drop-shadow-2xl hover:drop-shadow-black">
               <img
                 className="aspect-video w-full rounded-xl object-cover"
                 src={w.image}
@@ -23,9 +23,9 @@ function AllWorks() {
                 decoding="async"
               />
             </div>
-            <p className="min-h-0 flex-1 text-base leading-7 text-black/65">
-              <p className="eagle-t text-lg"> {w.description}</p>
-            </p>
+            <div className="min-h-0 flex-1 text-base leading-7 text-black/65">
+              <p className="eagle-t text-base"> {w.description}</p>
+            </div>
             <ul
               className="flex flex-wrap gap-2.5"
               aria-label={`${w.name} technologies`}
@@ -33,19 +33,19 @@ function AllWorks() {
               {w.stack.map((tech) => (
                 <li
                   key={tech.name}
-                  className="inside rounded-xl px-3 py-1.5 text-sm text-black/65 eagle"
+                  className="inside rounded-xl px-3 py-1 text-sm text-black/65 eagle"
                 >
                   {tech.name}
                 </li>
               ))}
             </ul>
-            <button
-              type="button"
-              className="outside-btn mt-1 inline-flex min-h-12 items-center justify-center gap-2 self-start rounded-xl px-4 py-3 font-semibold text-black/70 transition duration-300 hover:-translate-y-0.5 hover:text-red-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-red-700 motion-reduce:transform-none motion-reduce:transition-none eagle text-xl"
+            <a
+              href={w.link}
+              className="outside-btn mt-1 inline-flex min-h-12 items-center justify-center gap-2 self-start rounded-xl px-4 py-3 font-semibold text-black/70 transition duration-300 hover:-translate-y-0.5 hover:text-red-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-red-700 motion-reduce:transform-none motion-reduce:transition-none eagle text-md"
             >
               Click to see demo
               <ArrowUpRight size={17} aria-hidden="true" />
-            </button>
+            </a>
           </article>
         );
       })}

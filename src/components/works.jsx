@@ -16,7 +16,7 @@ function WorksField() {
           id="works-title"
           className="eagle-t text-3xl leading-tight text-black/75 sm:text-4xl"
         >
-          Here&apos;s some work I&apos;ve done
+          Here's some work I've done
         </h2>
         <p className="mt-3 max-w-2xl text-base leading-7 text-black/60 sm:text-lg ">
           A selection of projects that reflect what I enjoy building and the

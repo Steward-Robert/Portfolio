@@ -69,7 +69,7 @@ function About() {
   return (
     <section
       id="about"
-      className="about-section w-[90vw] md:w-[80vw] lg:w-[60vw] mx-auto py-10 inside rounded-2xl p-3"
+      className="about-section w-[90vw] md:w-[80vw] lg:w-[70vw] mx-auto py-10 inside rounded-2xl p-3"
     >
       {/* Label */}
       <div className="mb-8">
@@ -93,7 +93,7 @@ function About() {
 
       {/* Areas of interest */}
 
-      <div className="w-[70%] mx-auto mt-5 grid-cols-1 grid gap-8 sm:grid-cols-2 sm:w-[90%] md:grid-cols-2 lg:grid-cols-3 lg:w-[98%]">
+      <div className="w-[85%] mx-auto mt-5 grid-cols-1 grid gap-8 sm:grid-cols-2 sm:w-[90%] md:grid-cols-2 lg:grid-cols-3 lg:w-[98%]">
         <div className=" inside text-center rounded-2xl py-2.5">
           <p className="outside-box w-[80%] mx-auto p-2 rounded-2xl mb-2 eagle text-black/70 mt-2.5">
             FRONTEND
@@ -101,7 +101,7 @@ function About() {
           {frontend.map((f) => {
             return (
               <div className="flex flex-col" key={f.id}>
-                <p className="inside p-2 w-[70%] mx-auto rounded-2xl eagle text-black/60 text-sm my-1.5 flex gap-3 items-center">
+                <div className="inside p-2 w-[70%] mx-auto rounded-2xl eagle text-black/60 text-sm my-1.5 flex gap-2 items-center">
                   <div className=" h-6 w-6 rounded-sm ">
                     <img
                       className="object-cover w-full rounded-sm h-full drop-shadow-xl drop-shadow-black"
@@ -109,7 +109,7 @@ function About() {
                     />
                   </div>
                   {f.name}
-                </p>
+                </div>
               </div>
             );
           })}
@@ -144,7 +144,7 @@ function About() {
           {tools.map((t) => {
             return (
               <div className="flex flex-col" key={t.id}>
-                <p className="inside p-2 w-[70%] mx-auto rounded-2xl eagle text-black/60 text-sm my-1.5 flex gap-3 items-center">
+                <div className="inside p-2 w-[70%] mx-auto rounded-2xl eagle text-black/60 text-sm my-1.5 flex gap-3 items-center">
                   <div className=" h-6 w-6 rounded-sm">
                     <img
                       className="object-cover w-full rounded-full h-full drop-shadow-xl drop-shadow-black"
@@ -152,7 +152,7 @@ function About() {
                     />
                   </div>
                   <p>{t.name}</p>
-                </p>
+                </div>
               </div>
             );
           })}

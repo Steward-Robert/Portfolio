@@ -1,4 +1,4 @@
-import { Mail, ArrowUpRight, ArrowUp } from "lucide-react";
+import { ArrowUpRight, ArrowUp } from "lucide-react";
 import "../styles/footer.css";
 
 function Footer() {

@@ -75,6 +75,16 @@
   transition: transform 350ms ease;
 }
 
+.glass {
+  background-color: transparent;
+  backdrop-filter: blur(40px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.remove {
+  border: none;
+}
+
 .contact-field {
   background: #bebebe;
   border: 1px solid transparent;
