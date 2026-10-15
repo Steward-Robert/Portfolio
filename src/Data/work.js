@@ -2,10 +2,10 @@ const work = [
   {
     id: 1,
     name: "Wavely",
-    link: "https//wavely-seven.vercel.app",
+    link: "https://wavely-seven.vercel.app",
     image: "/Capture d'écran 2026-10-13 145134.png",
     description:
-      "The old clock in the hallway chimed softly, marking an hour that no one seemed to care about anymore. Outside, the rain tapped a steady rhythm against the glass, blurring the neon signs of the street into long, colorful streaks. She adjusted the heavy woolen scarf around her neck and turned the page of her book, letting the quiet room wrap around her like a familiar coat.",
+      "Wavely is a full-stack social media platform where users can connect, share posts, create stories, interact with others and build meaningful connections , built with React, Tailwind CSS, Node.js, Express, and PostgreSQL, it features user authentication, media uploads, and a modern, responsive interface designed to deliver a smooth social experience",
     stack: [
       { name: "Html" },
       { name: "CSS" },
