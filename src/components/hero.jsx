@@ -17,11 +17,7 @@ function Hero() {
       </div>
       <div className=" w-[70vw] absolute -top-10 -right-10 z-0 sm:-top-20 sm:w-[70vw] md:-top-30 md:w-[66vw] lg:-top-30 lg:w-[55vw] bird">
         <img
-          src={
-            theme === "light"
-              ? "vecteezy_ai-generated-beautiful-flying-dove-isolated-on-a-transparent_35878518.png"
-              : ""
-          }
+          src="vecteezy_ai-generated-beautiful-flying-dove-isolated-on-a-transparent_35878518.png"
           className="w-full h-full sm:opacity-70 object-cover drop-shadow-black/60 drop-shadow-2xl "
         />
       </div>
