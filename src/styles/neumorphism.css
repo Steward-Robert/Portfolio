@@ -19,7 +19,7 @@
 
   box-shadow:
     8px 8px 16px #a0a0a0,
-    -8px -8px 16px #f1f1f1;
+    -8px -8px 16px #f2f1f1;
 }
 
 .inside {
@@ -144,4 +144,49 @@
 
 .Shadow {
   box-shadow: 0px 0px 0px 10px rgb(148, 147, 147);
+}
+
+/* DARK MODE */
+
+.dark .outside,
+.dark .outside-btn,
+.dark .outside-box,
+.dark .portfolio-card {
+  background: #242424;
+  box-shadow:
+    8px 8px 16px #191919,
+    -8px -8px 16px #303030;
+}
+
+.dark .inside {
+  background: #242424;
+  box-shadow:
+    inset 6px 6px 12px #191919,
+    inset -6px -6px 12px #303030;
+}
+
+.dark .outside-btn:active,
+.dark .outside-box:hover {
+  background: #242424;
+  box-shadow:
+    inset 5px 5px 10px #191919,
+    inset -5px -5px 10px #303030;
+}
+
+.dark .contact-field {
+  background: #242424;
+  color: #ffffff;
+  box-shadow:
+    inset 4px 4px 8px #191919,
+    inset -4px -4px 8px #303030;
+}
+
+.dark .contact-field:focus {
+  border-color: rgb(185 28 28 / 45%);
+}
+
+.dark .portfolio-card:hover {
+  box-shadow:
+    10px 10px 20px #191919,
+    -10px -10px 20px #303030;
 }

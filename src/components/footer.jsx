@@ -13,25 +13,27 @@ function Footer() {
               href="#home"
               className="inline-block text-3xl font-bold tracking-wider"
             >
-              <p className="eagle text-black/80">
+              <p className="eagle text-black/80 dark:text-white">
                 WARD
                 <span className="text-red-600 text-3xl font-bold ">࿐</span>
               </p>
             </a>
 
-            <p className="max-w-xs text-sm leading-7 text-black/60">
+            <p className="max-w-xs text-sm leading-7 text-black/60 dark:text-white/40">
               Junior Full-Stack Developer passionate about building modern,
               interactive, and meaningful digital experiences.
             </p>
 
             <div className="flex items-center gap-2 text-sm text-gray-500">
               <span className="h-2 w-2 rounded-full bg-green-500" />
-              <p className="text-black/70 text-lg">Open to opportunities </p>
+              <p className="text-black/70 text-lg dark:text-white">
+                Open to opportunities{" "}
+              </p>
             </div>
           </div>
 
           {/* Navigation */}
-          <div className="text-black/70">
+          <div className="text-black/70 dark:text-white/60">
             <h3 className="mb-5 text-sm font-semibold uppercase tracking-[0.2em]">
               Explore
             </h3>
@@ -73,7 +75,7 @@ function Footer() {
               Let's Connect
             </h3>
 
-            <p className="mb-5 text-sm leading-7 text-black/70">
+            <p className="mb-5 text-sm leading-7 text-black/70 dark:text-white/40">
               Have a project in mind or an opportunity to share? Let's talk.
             </p>
 
@@ -92,7 +94,7 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
-                  className="flex h-11 w-11 items-center justify-center rounded-xl transition-all duration-300 hover:-translate-y-1 drop-shadow-sm drop-shadow-black"
+                  className="flex h-11 w-11 items-center justify-center rounded-xl transition-all duration-300 hover:-translate-y-1 drop-shadow-sm drop-shadow-black dark:drop-shadow-white"
                 >
                   <img src="/github.png" className="opacity-80" />
                 </a>
@@ -104,7 +106,7 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="whatsapp"
-                  className="flex h-11 w-11 items-center justify-center rounded-xl transition-all duration-300 hover:-translate-y-1 drop-shadow-md drop-shadow-black"
+                  className="flex h-11 w-11 items-center justify-center rounded-xl transition-all duration-300 hover:-translate-y-1 drop-shadow-md drop-shadow-black dark:drop-shadow-white"
                 >
                   <img src="/whatsapp.png" className="opacity-80" />
                 </a>
@@ -116,7 +118,7 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Mail"
-                  className="flex h-11 w-11 items-center justify-center rounded-xl transition-all duration-300 hover:-translate-y-1 drop-shadow-sm drop-shadow-black"
+                  className="flex h-11 w-11 items-center justify-center rounded-xl transition-all duration-300 hover:-translate-y-1 drop-shadow-sm drop-shadow-black dark:drop-shadow-white"
                 >
                   <img src="/email.png" className="opacity-80" />
                 </a>

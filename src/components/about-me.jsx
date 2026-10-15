@@ -73,14 +73,14 @@ function About() {
     >
       {/* Label */}
       <div className="mb-8">
-        <span className="text-xl outside-box inline-block rounded-xl px-5 py-2 font-semibold tracking-[0.2em] text-black/60 hover:text-red-600 eagle">
+        <span className="text-xl outside-box inline-block rounded-xl px-5 py-2 font-semibold tracking-[0.2em] text-black/60 hover:text-red-600 eagle dark:text-white">
           ABOUT ME
         </span>
       </div>
 
       {/* Typewriter effect */}
       <p
-        className="eagle-t mt-6 max-w-2xl text-lg md:text-xl leading-relaxed text-gray-700"
+        className="eagle-t mt-6 max-w-2xl text-lg md:text-xl leading-relaxed text-gray-700 dark:text-white/50"
         aria-label={text}
       >
         {displayedText}
@@ -100,7 +100,7 @@ function About() {
           </p>
           {frontend.map((f) => {
             return (
-              <div className="flex flex-col" key={f.id}>
+              <div className="flex flex-col " key={f.id}>
                 <div className="inside p-2 w-[70%] mx-auto rounded-2xl eagle text-black/60 text-sm my-1.5 flex gap-2 items-center">
                   <div className=" h-6 w-6 rounded-sm ">
                     <img
@@ -108,7 +108,7 @@ function About() {
                       src={f.image}
                     />
                   </div>
-                  {f.name}
+                  <p className="dark:text-white/50"> {f.name}</p>
                 </div>
               </div>
             );
@@ -130,7 +130,7 @@ function About() {
                     />
                   </div>
 
-                  <p> {b.name}</p>
+                  <p className="dark:text-white/50"> {b.name}</p>
                 </div>
               </div>
             );
@@ -151,7 +151,7 @@ function About() {
                       src={t.image}
                     />
                   </div>
-                  <p>{t.name}</p>
+                  <p className="dark:text-white/50">{t.name}</p>
                 </div>
               </div>
             );

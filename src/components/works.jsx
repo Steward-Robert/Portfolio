@@ -9,16 +9,16 @@ function WorksField() {
       aria-labelledby="works-title"
     >
       <div className="mb-8 sm:mb-10">
-        <p className="mb-4 inline-block rounded-xl px-5 py-2 text-sm font-semibold tracking-[0.2em] text-black/60 outside-box eagle">
+        <p className="mb-4 inline-block rounded-xl px-5 py-2 text-sm font-semibold tracking-[0.2em] text-black/60 outside-box eagle dark:text-white">
           MY WORKS
         </p>
         <h2
           id="works-title"
-          className="eagle-t text-3xl leading-tight text-black/75 sm:text-4xl"
+          className="eagle-t text-3xl leading-tight text-black/75 sm:text-4xl dark:text-white/50"
         >
           Here's some work I've done
         </h2>
-        <p className="mt-3 max-w-2xl text-base leading-7 text-black/60 sm:text-lg ">
+        <p className="mt-3 max-w-2xl text-base leading-7 text-black/60 sm:text-lg dark:text-white/40 ">
           A selection of projects that reflect what I enjoy building and the
           tools I use to bring ideas to life.
         </p>
