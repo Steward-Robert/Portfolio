@@ -28,6 +28,7 @@ function About() {
 
   const [displayedText, setDisplayedText] = useState("");
   const [startTyping, setStartTyping] = useState(false);
+  const [showSkills, setShowSkills] = useState(false);
 
   useEffect(() => {
     const section = document.querySelector(".about-section");
@@ -38,6 +39,7 @@ function About() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setStartTyping(true);
+          setShowSkills(true);
           observer.disconnect();
         }
       },
@@ -93,8 +95,14 @@ function About() {
 
       {/* Areas of interest */}
 
-      <div className="w-[85%] mx-auto mt-5 grid-cols-1 grid gap-8 sm:grid-cols-2 sm:w-[90%] md:grid-cols-2 lg:grid-cols-3 lg:w-[98%]">
-        <div className=" inside text-center rounded-2xl py-2.5">
+      <div
+        className="about-skills w-[85%] mx-auto mt-5 grid-cols-1 grid gap-8 sm:grid-cols-2 sm:w-[90%] md:grid-cols-2 lg:grid-cols-3 lg:w-[98%]"
+        data-visible={showSkills}
+      >
+        <div
+          className="about-skills-card inside text-center rounded-2xl py-2.5"
+          style={{ "--reveal-delay": "0s" }}
+        >
           <p className="outside-box w-[80%] mx-auto p-2 rounded-2xl mb-2 eagle text-black/70 mt-2.5">
             FRONTEND
           </p>
@@ -115,7 +123,10 @@ function About() {
           })}
         </div>
 
-        <div className=" inside text-center rounded-2xl py-2.5">
+        <div
+          className="about-skills-card inside text-center rounded-2xl py-2.5"
+          style={{ "--reveal-delay": "1s" }}
+        >
           <p className="outside-box w-[80%] mx-auto p-2 rounded-2xl mb-2 eagle text-black/70 mt-2.5">
             BACKEND
           </p>
@@ -137,7 +148,10 @@ function About() {
           })}
         </div>
 
-        <div className=" inside text-center rounded-2xl py-2.5">
+        <div
+          className="about-skills-card inside text-center rounded-2xl py-2.5"
+          style={{ "--reveal-delay": "2s" }}
+        >
           <p className="outside-box w-[80%] mx-auto p-2 rounded-2xl mb-2 eagle text-black/70 mt-2.5">
             TOOLS
           </p>

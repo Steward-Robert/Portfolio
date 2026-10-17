@@ -15,7 +15,7 @@ function Contact() {
           </p>
           <h2
             id="contact-title"
-            className="eagle-t text-3xl leading-tight text-black/75 sm:text-4xl text-white/50"
+            className="eagle-t text-3xl leading-tight text-black/75 sm:text-4xl dark:text-white/50"
           >
             Let&apos;s build something together
           </h2>

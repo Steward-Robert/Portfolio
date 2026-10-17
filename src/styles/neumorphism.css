@@ -4,6 +4,9 @@
   box-shadow:
     8px 8px 16px #a0a0a0,
     -8px -8px 16px #f1f1f1;
+  transition:
+    background-color 0.5s ease,
+    box-shadow 0.5s ease;
 }
 
 .outside-btn {
@@ -12,6 +15,9 @@
   box-shadow:
     8px 8px 16px #a0a0a0,
     -8px -8px 16px #f1f1f1;
+  transition:
+    background-color 0.5s ease,
+    box-shadow 0.5s ease;
 }
 
 .outside-box {
@@ -20,6 +26,9 @@
   box-shadow:
     8px 8px 16px #a0a0a0,
     -8px -8px 16px #f2f1f1;
+  transition:
+    background-color 0.5s ease,
+    box-shadow 0.5s ease;
 }
 
 .inside {
@@ -28,6 +37,9 @@
   box-shadow:
     inset 6px 6px 12px #7d7d7d,
     inset -6px -6px 12px #f1f1f1;
+  transition:
+    background-color 0.5s ease,
+    box-shadow 0.5s ease;
 }
 
 .eagle {
@@ -62,7 +74,8 @@
     -7px -7px 14px #f1f1f1;
   transition:
     transform 240ms ease,
-    box-shadow 240ms ease;
+    background-color 0.5s ease,
+    box-shadow 0.5s ease;
 }
 
 .portfolio-project-image {
@@ -189,4 +202,30 @@
   box-shadow:
     10px 10px 20px #191919,
     -10px -10px 20px #303030;
+}
+
+.about-skills-card {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+.about-skills[data-visible="true"] .about-skills-card {
+  animation: aboutSkillReveal 600ms ease-out forwards;
+  animation-delay: var(--reveal-delay);
+}
+
+@keyframes aboutSkillReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-skills-card,
+  .about-skills[data-visible="true"] .about-skills-card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }
