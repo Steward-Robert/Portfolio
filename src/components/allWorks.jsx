@@ -11,7 +11,7 @@ function AllWorks() {
             className="portfolio-card flex flex-col gap-5 rounded-2xl p-5 sm:p-6"
             key={w.id}
           >
-            <h3 className="eagle text-2xl inside p-2 inline-block rounded-2xl text-center leading-snug text-black/75 dark:text-white/50">
+            <h3 className="eagle text-2xl inside p-2 inline-block rounded-2xl text-center leading-snug text-black/75 dark:text-white">
               {w.name}
             </h3>
             <div className="portfolio-project-image w-full overflow-hidden rounded-xl duration-1000 lg:hover:scale-155 lg:hover:drop-shadow-2xl hover:drop-shadow-black">

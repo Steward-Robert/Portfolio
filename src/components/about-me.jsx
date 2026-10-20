@@ -103,7 +103,7 @@ function About() {
           className="about-skills-card inside text-center rounded-2xl py-2.5"
           style={{ "--reveal-delay": "0s" }}
         >
-          <p className="outside-box w-[80%] mx-auto p-2 rounded-2xl mb-2 eagle text-black/70 mt-2.5">
+          <p className="outside-box w-[80%] mx-auto p-2 rounded-2xl mb-2 eagle text-black/70 mt-2.5 dark:text-white">
             FRONTEND
           </p>
           {frontend.map((f) => {
@@ -127,7 +127,7 @@ function About() {
           className="about-skills-card inside text-center rounded-2xl py-2.5"
           style={{ "--reveal-delay": "1s" }}
         >
-          <p className="outside-box w-[80%] mx-auto p-2 rounded-2xl mb-2 eagle text-black/70 mt-2.5">
+          <p className="outside-box w-[80%] mx-auto p-2 rounded-2xl mb-2 eagle text-black/70 mt-2.5 dark:text-white">
             BACKEND
           </p>
           {backend.map((b) => {
@@ -152,7 +152,7 @@ function About() {
           className="about-skills-card inside text-center rounded-2xl py-2.5"
           style={{ "--reveal-delay": "2s" }}
         >
-          <p className="outside-box w-[80%] mx-auto p-2 rounded-2xl mb-2 eagle text-black/70 mt-2.5">
+          <p className="outside-box w-[80%] mx-auto p-2 rounded-2xl mb-2 eagle text-black/70 mt-2.5 dark:text-white">
             TOOLS
           </p>
           {tools.map((t) => {

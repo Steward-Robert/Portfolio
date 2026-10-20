@@ -6,14 +6,15 @@ import Intro from "./components/intro";
 import WorksField from "./components/works";
 import "./styles/App.css";
 import Footer from "./components/footer";
-
+import { useState } from "react";
 function App() {
+  const [theme, setTheme] = useState("light");
   return (
     <div id="top">
       <Intro />
       <main className="portfolio-content">
-        <Header />
-        <Hero />
+        <Header theme={theme} setTheme={setTheme} />
+        <Hero theme={theme} />
         <About />
         <WorksField />
         <Contact />

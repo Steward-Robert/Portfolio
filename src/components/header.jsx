@@ -2,9 +2,8 @@ import "../styles/neumorphism.css";
 import { Plus, Moon, Sun } from "lucide-react";
 import { useState } from "react";
 
-function Header() {
+function Header({ theme, setTheme }) {
   const [open, setOpen] = useState(false);
-  const [theme, setTheme] = useState("light");
 
   const toogle = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -17,7 +16,7 @@ function Header() {
       <div className="flex gap-1">
         <a
           href="#home"
-          className="font-bold pl-3 text-3xl text-gray-800 eagle dark:text-white/60 duration-500 "
+          className="font-bold pl-3 text-3xl text-gray-800 eagle dark:text-white duration-500 "
         >
           WARD
         </a>
@@ -70,7 +69,7 @@ function Header() {
             className={
               open
                 ? "hover:text-red-600 duration-500 rotate-140 dark:text-red-700"
-                : "hover:text-red-600 duration-500 "
+                : "hover:text-red-600 duration-500"
             }
           />
         </button>
